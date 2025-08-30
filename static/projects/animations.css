@@ -1,6 +1,5 @@
 html, body {
   overflow-x: hidden;  /* Prevent horizontal scroll */
-  overflow-y: hidden;
 }
 
 /* Navbar animation: fade + slide from top */
@@ -40,4 +39,5 @@ html, body {
 .card:nth-child(1) { animation-delay: 0.2s; }
 .card:nth-child(2) { animation-delay: 0.4s; }
 .card:nth-child(3) { animation-delay: 0.6s; }
+
 .card:nth-child(4) { animation-delay: 0.8s; }
