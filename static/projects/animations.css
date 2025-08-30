@@ -1,0 +1,43 @@
+html, body {
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+  overflow-y: hidden;
+}
+
+/* Navbar animation: fade + slide from top */
+.xtut-mynav {
+  animation: navbar-slide 0.2s cubic-bezier(0.45, 0, 0.55,1) forwards;
+}
+
+@keyframes navbar-slide {
+  from {opacity: 0.5;}
+  to {opacity: 1;}
+}
+
+.card {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+  
+}
+@keyframes fadeInUp {
+  from { opacity: 0;}
+  to   { opacity: 1;} 
+}
+/* Make sure this file loads AFTER bootstrap.css */
+.card.project-box-item {
+  transition: transform 0.8s ease, box-shadow 0.3s ease ;
+  
+}
+
+.card.project-box-item:hover {
+  cursor: pointer;
+  transform: translateY(-10px) scale(1.2) ;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.3);
+}
+
+
+
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+.card:nth-child(4) { animation-delay: 0.8s; }

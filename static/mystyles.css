@@ -1,0 +1,142 @@
+.xtut-mynav {
+  z-index: 100000;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between; /* Push elements to the right */
+  background-color: rgba(247, 247, 247, 0.152); /* Light grey background */
+  padding: 0.5rem 1rem; /* Some spacing */
+  backdrop-filter: blur(8px); /* Soft blur behind */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  
+}
+
+
+
+
+.mylogo img {
+width: 90px;
+height: auto;
+border-radius: 5px;
+display: block;
+padding-left: 20px;
+}
+
+.portfoliotext {
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  letter-spacing: 1px;
+  align-self: center;
+  font-size: 1.5rem;
+  position: absolute;       /* Position relative to the viewport */
+  left: 50%;                 /* Move halfway across */
+  transform: translate(-50%); /* Offset by half its own width & height */
+
+}
+.maincontent{
+  display: flexbox;
+  position: relative;
+  padding-bottom: 500px;
+}
+.mainbox{
+  padding-bottom: 25px;
+  position:absolute;       /* Position relative to the viewport */
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Offset by half its own width & height */
+  /* padding-bottom: 500px; */
+}
+
+.location-box{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+.location-box img{
+  transform: translate(-50%, -50%);
+}
+
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-body p{
+  font-family: "Delius", cursive;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hero-section {
+  border-color: purple;
+  border-width: 100px,105px,105px,105px;
+  min-height: 60vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 0 20px;
+  text-align: center;
+  /* Background image + overlay */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/static/images/background1.webp") center/cover no-repeat;
+}
+.hero-section p{
+  position: absolute;
+  top:25%;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.scrolling-banner {
+  z-index: 500;
+  position:fixed;
+  bottom: 2rem;
+  width: 100%;
+  border-color: black;
+  background-color:white; /* dark background */
+  color: black;
+  overflow: hidden; /* hide the overflowing text */
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.scrolling-text {
+  display: inline-block;
+   /* start off screen */
+  animation: scroll-left 20s linear infinite;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.scrolling-text span {
+  padding-left: 20px;
+  word-spacing: 20px;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.socials{
+  display: flex;
+  justify-content: center;
+}
+.socials img{
+border-radius: 5px;
+height: 40px;
+width: auto;
+margin: 10px;
+}

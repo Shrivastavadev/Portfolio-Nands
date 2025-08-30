@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    -->
+    <!-- MyCSS -->
+    <link rel="stylesheet" href="static/mystyles.css">
+    <link rel="stylesheet" href="static/animations.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Delius&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>Nandana</title>
+  </head>
+  <body>
+    <div class="xtut-mynav">
+        <div class="mylogo">
+            <img src="static/logo/logo2.png" alt="My Logo">
+        </div>
+        <div class="portfoliotext">
+            PORTFOLIO
+        </div>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn-dark mx-1" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-dark mx-1" href="projects.html">Projects</a>
+                        </li>
+                        <div class="dropdown nav-item">
+                            <button class="btn btn-dark dropdown-toggle mx-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                <li><a class="dropdown-item" href="/static/Nandana-Manoj-Aug-2025.pdf" target="_blank">CV</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class= "maincontent"> 
+        <div class="mainbox">
+            <div class="card" style="width: 25rem;">
+                <img src="static/images/center-image.jpg" class="card-img-top" >
+                <div class="card-body">
+                    <p class="card-text text-center introtext">Hi! I am Nandana Manoj, researcher & content creator</p>
+                    <div class = "location-box">
+                        <img style="width: 1.5rem; display:block;"src="static/images/location-dotl.svg">
+                        <a href="https://maps.app.goo.gl/9Z8uu5QDLirX7gjX9" target="_blank"><p >NISER, Bhubaneswar, Odisha</p></a>
+                    </div>
+                    <div class="socials">
+                        <a class= "icons" href="https://www.linkedin.com/in/nandana-manoj-a31777256" title="Visit LinkedIn" target="_blank">
+                            <img src="static/icons/linkedin.png">
+                        </a>
+                        <a class= "icons" title="Copy email" onclick="copyMail(event)">
+                            <img src="static/icons/gmail.png">
+                        </a>
+                        <a class= "icons" href="https://www.instagram.com/lyf_in_squares?igsh=MWVlYTZ0N2pja2F5MQ==" title="Visit Instagram" target="_blank">
+                            <img src="static/icons/ig.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-section">
+            <p>
+                “It is better to fail in originality than to succeed in imitation.” <br>  ~Herman Melville
+            </p>
+        </div>
+    </div>
+    
+
+    
+    </div>
+    <div class="fixed-bottom bg-dark text-white text-center py-2">
+        <span id="rotating-text">This is going to be legen-  wait-for-it  -dary</span>
+    </div>
+
+    <div class="scrolling-banner">
+        <div class="scrolling-text">
+            <span>
+                HARDWORK  •  CONCISTANCY •  NANOTECH •  RESEARCH • BATTERY • PERFECTION • LIMITLESS POTENTIAL •
+                COURAGE • CAFFINE • NANOTECHNOLOGY • PUBLICATIONS • JOURNEY • POSITIVITY • DIVA •
+            </span>
+
+             <span>
+                HARDWORK  •  CONCISTANCY •  NANOTECH •  RESEARCH • BATTERY • PERFECTION • LIMITLESS POTENTIAL •
+                COURAGE • CAFFINE • NANOTECHNOLOGY • PUBLICATIONS • JOURNEY • POSITIVITY • DIVA •
+            </span>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <!-- Load SplitText plugin (now free) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"></script>
+    <script src="static/myscript.js"></script>
+
+  </body>
+</html>
